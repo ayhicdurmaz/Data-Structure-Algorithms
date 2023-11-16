@@ -11,8 +11,8 @@ int main()
 {
     srand(time(NULL));
 
-    int* arr = generateRandomArray(10);
-    int* sorted = insertionSort(arr, 10);
+    int *arr = generateRandomArray(10);
+    int *sorted = insertionSort(arr, 10);
 
     printArray(arr, 10);
     printArray(sorted, 10);
@@ -34,9 +34,8 @@ int *generateRandomArray(int size)
 
 int *insertionSort(int arr[], int size)
 {
-    int* sorted = (int*) malloc(size * sizeof(int));
+    int *sorted = (int *)malloc(size * sizeof(int));
     arrCpy(sorted, arr, size);
-    
 
     int i, j, key = 0;
 
@@ -52,8 +51,10 @@ int *insertionSort(int arr[], int size)
     return sorted;
 }
 
-void arrCpy(int arr1[], int arr2[], int size){
-    for(int i = 0; i < size; i++){
+void arrCpy(int arr1[], int arr2[], int size)
+{
+    for (int i = 0; i < size; i++)
+    {
         arr1[i] = arr2[i];
     }
 }
