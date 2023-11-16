@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 int *generateRandomArray(int size);
 int *insertionSort(int arr[], int size);
 void printArray(int arr[], int size);
